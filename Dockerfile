@@ -1,5 +1,9 @@
 FROM ubuntu:16.04
 
+ENV http_proxy="http://wbi\nxf42681:Welcome%402017@apac.nics.nxp.com:8080" 
+ENV ftp_proxy="http://wbi\nxf42681:Welcome%402017@apac.nics.nxp.com:8080" 
+ENV https_proxy="http://wbi\nxf42681:Welcome%402017@apac.nics.nxp.com:8080"
+
 RUN  apt-get update
 RUN  apt-get upgrade -y
 
