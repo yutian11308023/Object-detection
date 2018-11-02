@@ -17,7 +17,7 @@ RUN apt-get install -qqy x11-apps
 
 # Install dependencies tools 
 RUN apt-get install -y wget vim
-RUN wget -O /tmp/get-pip.py https://bootstrap.pypa.io/get-pip.py
+RUN wget -O /tmp/get-pip.py https://bootstrap.pypa.io/get-pip.py --no-check-certificate
 RUN python3 /tmp/get-pip.py
 RUN pip install --upgrade pip
 
